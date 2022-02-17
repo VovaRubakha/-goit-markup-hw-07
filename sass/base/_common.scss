@@ -7,15 +7,21 @@ body {
   
   .link {
     color: var(--title-text-color);
+    @include animation;
+    
     text-decoration: none;
     &:hover,
     &:focus {
       color: var(--accent-color);
-      @include animation;
+  
   }
 
   }
   .list {
+    list-style: none;
+
+  }
+  .item {
     color: var(--main-text-color);
     @include font(14px, 500, 0.02em, 1.14);
     list-style: none;

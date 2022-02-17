@@ -1,37 +1,37 @@
-header {
+  .header {
+    position: relative;
     padding-top: 24px;
     padding-bottom: 25px;
+    width: 100%;
     border-bottom: 1px solid #ececec;
-    display: block;
+    left: 0;
   }
-  .main-nav {
+  
+  .header__container {
+    display: flex;
+    align-items: center;
+    }  
+  .header-nav {
     display: flex;
     align-items: center;
     & .logo {
       margin-right: 94px;
-    }
-      &-title {
-        display: flex;
-        align-items: center;
-  }
+      }
   }
   .site-nav {
     display: flex;
-    & .list + .list{
-      margin-left: 50px;
+    & .item + .item{
+      margin-left: 50px;      
     }
     & .link {
       position: relative;
       color: var(--main-text-color);
-      text-decoration: none;
-      &:hover,
-      &:focus {
+      text-decoration: none;  
+      &:hover {
         color: var(--accent-color);
-        @include animation;
-    }
-  }     
-}   
-
+      }
+    }    
+  }   
   .link.current::after {
     content: "";
     position: absolute;
@@ -47,24 +47,19 @@ header {
   }
   .contact {
     margin-left: auto;
-      .contact-list .list + .list {
+      .contact-list .item + .item {
     margin-left: 50px;
   }
     &-list {
       display: flex;
       align-items: center;  
-      & .list + .list {
+      & .item + .item {
         margin-left: 50px;
       }  
     }
-    &-icon {
+    &__icon {
       margin-right: 10px;
-      fill: currentColor;
-      &:hover,
-      &:focus {
-        fill: var(--accent-color);
-      }
-      @include animation;
+      fill: currentColor;                
     }
   }  
 
