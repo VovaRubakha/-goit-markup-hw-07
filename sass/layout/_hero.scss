@@ -4,8 +4,6 @@
   }
   .hero {
     text-align: center;
-  }
-  .hero {
     max-width: 1600px;
     height: 600px;
     background: #c4c4c4;
@@ -20,7 +18,7 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .hero-title {
+  .hero__title {
     color: var(--primary-wite-color);
     text-transform: uppercase;
     @include font(44px, 900, 0.05em, 1.36);
