@@ -810,6 +810,20 @@ body {
   margin-right: 70px;
 }
 
+.footer-connect .social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  color: var(--primary-wite-color);
+  fill: var(--primary-wite-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-connect .social-link:hover,
+.footer-connect .social-link:focus {
+  background-color: var(--accent-color);
+}
+
 address {
   margin-top: 20px;
 }
