@@ -1,43 +1,36 @@
 .feature {
     padding-top: 94px;
     padding-bottom: 94px;
-    &-list {
+    &__list {
       display: flex;
       & {
         display: flex;
       }
-      & .list {
+      & .item{
         max-width: 270px;
       }
-      & .list + .list {
+      & .item + .item {
         margin-left: 30px;
       } 
     }
-    &-box {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    &__box {
+      @extend %align-list;
+      justify-content: center;    
       width: 270px;
       height: 120px;
       border-radius: 4px;
       background-color: var(--primary-button-color);
     } 
     
-    &-title {
+    &__title {
       color: var(--main-text-color);
       text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 1.14;
-      letter-spacing: 0.03em;
+      @include font(14px, 700, 0.03em, 1.14);
       margin-top: 30px;
     }
-    &-description {
+    &__description {
       color: var(--title-text-color);
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 1.71;
-      letter-spacing: 0.03em;        
+      @include font(14px, 400, 0.03em, 1.71);
       margin-top: 10px;
     }
   }  

@@ -2,27 +2,21 @@
     padding-top: 94px;
     padding-bottom: 94px;
     
-    &-title {
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 1.17;
-      text-align: center;
-      letter-spacing: 0.03em;
-    
+    &__title {
+      @include font(36px, 700, 0.03em, 1.17);
+      text-align: center;    
       margin-bottom: 50px;
     }
-    &-list {
-      display: flex;
+    &__list {
+      @extend %align-list;
       justify-content: center;
-      align-items: center;
       padding: 0;
       margin: 0;
       list-style: none;
-      & .list + .list {
+      & .item + .item {
         margin-left: 30px;
       }
     }
-
   }  
   .clients-box {
     display: flex;
@@ -36,15 +30,15 @@
       fill: var(--accent-color);
       border: 1px solid var(--accent-color);
     }
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    & .icon{
+      fill: var(--icon-primary-color);
+      @include animation
+    }
   }  
-
   .icon {
     fill: var(--icon-primary-color);
     .clients-box:hover &,
     .clients-box:focus & {
       fill: var(--accent-color);
-      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
