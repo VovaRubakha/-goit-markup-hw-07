@@ -3,6 +3,7 @@
   
     padding-top: 94px;
     padding-bottom: 94px;
+    
   }
   .our-team-title {
     font-weight: 700;
@@ -59,4 +60,11 @@
   
   .social-list-link + .social-list-link {
     margin-left: 10px;
+  }
+  .our-team-icon {
+    fill: var(--icon-primary-color);    
+    .social-link:hover &,
+    .social-link:focus & {
+      fill: currentColor;
+    }
   }

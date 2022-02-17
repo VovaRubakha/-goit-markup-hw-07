@@ -114,7 +114,7 @@ header {
   background-color: var(--accent-color);
 }
 
-.contacts-list {
+.contact-list {
   display: flex;
   align-items: center;
 }
@@ -125,7 +125,7 @@ header {
   margin-right: 94px;
 }
 .site-nav .list + .list,
-.contacts-list .list + .list {
+.contact-list .list + .list {
   margin-left: 50px;
 }
 

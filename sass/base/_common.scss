@@ -1,7 +1,4 @@
-body {
-    background-color: var(--primary-white-color);
-    color: var(--primary-text-color);
-  
+body {  
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.02em;
     font-size: 14px;
@@ -26,11 +23,12 @@ body {
   .link {
     color: var(--title-text-color);
     text-decoration: none;
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      @include animation
   }
-  .link:hover,
-  .link:focus {
-    color: var(--accent-color);
-    transition-duration: 250ms;
+
   }
   .list {
     color: var(--main-text-color);
