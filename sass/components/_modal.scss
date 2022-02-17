@@ -47,7 +47,7 @@
       left: 8px;
       top: 50%;
       transform: translateY(-50%);
-      .modal-input:focus + & {
+      .modal__input:focus + & {
         fill: var(--accent-color);
       }
     }
