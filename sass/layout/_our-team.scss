@@ -1,17 +1,11 @@
 .our-team {
-    background-color: var(--primary-button-color);
-  
+    background-color: var(--primary-button-color);  
     padding-top: 94px;
-    padding-bottom: 94px;
-    
+    padding-bottom: 94px;    
   }
   .our-team-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    @include font(36px, 700, 0.03em, 1.17);
     text-align: center;
-    letter-spacing: 0.03em;
-  
     margin-bottom: 50px;
   }
   .our-team-list {
@@ -34,6 +28,7 @@
   }
   .team-member {
     color: var(--main-text-color);
+    @include font(16px, 500, 0.03em, 1.19);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.19;
@@ -43,10 +38,7 @@
   }
   .duties {
     color: var(--title-text-color);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    @include font(16px, 400, 0.03em, 1.19);
     margin-bottom: 16px;
   }
   .social-list {
