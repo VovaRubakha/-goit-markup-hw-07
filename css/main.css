@@ -23,7 +23,7 @@
   margin: -1px;
 }
 
-.header__container, .header-nav, .feature__box, .employment-label__text, .our-team-list, .social-block-list, .clients-list, .portfolio-buttons-list, .subscription form button[type="submit"] {
+.header__container, .header-nav, .feature__box, .employment-label__text, .our-team-list, .social-block-list, .clients-list, .portfolio-buttons-list, .subscription-button {
   display: flex;
   align-items: center;
 }
@@ -332,6 +332,10 @@ body {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+.submit-button:hover, .submit-button:focus {
+  background-color: #177cce;
 }
 
 /* кнопка Х */
@@ -929,7 +933,7 @@ body {
   background: transparent;
 }
 
-.subscription form button[type="submit"] {
+.subscription-button {
   position: relative;
   height: 50px;
   min-width: 200px;
@@ -946,6 +950,10 @@ body {
   background: var(--accent-color);
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.subscription-button:hover, .subscription-button:focus {
+  background-color: #177cce;
 }
 
 .subscription-button__icon {
